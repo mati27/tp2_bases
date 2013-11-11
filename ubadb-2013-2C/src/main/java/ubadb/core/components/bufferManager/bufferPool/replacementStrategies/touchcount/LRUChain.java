@@ -1,20 +1,26 @@
 package ubadb.core.components.bufferManager.bufferPool.replacementStrategies.touchcount;
 
-import java.util.Queue;
+import java.util.ArrayDeque;
 
 public class LRUChain
 {
-	private Queue<TCBufferFrame> coldRegion;
-	private Queue<TCBufferFrame> hotRegion;
+	private int sizeColdRegion;
+	private int sizeHotRegion;
+	private ArrayDeque<TCBufferFrame> coldRegion;
+	private ArrayDeque<TCBufferFrame> hotRegion;
 	
-	public LRUChain(int size) 
+	public LRUChain(int sizeColdRegion, int sizeHotRegion) 
 	{
-		
+		this.sizeColdRegion = sizeColdRegion;
+		this.sizeHotRegion = sizeHotRegion;
+		coldRegion = new ArrayDeque<TCBufferFrame>(sizeColdRegion);
+		hotRegion = new ArrayDeque<TCBufferFrame>(sizeHotRegion);
 	}
 	
 	public void addNewFrame(TCBufferFrame frame) 
 	{
-		
+		coldRegion.add(frame);
+		frame.setTouchCount(0);
 	}
 	
 	public void update() 
@@ -22,8 +28,13 @@ public class LRUChain
 		
 	}
 	
-	public Queue<TCBufferFrame> coldRegion()
+	public ArrayDeque<TCBufferFrame> coldRegion()
 	{
 		return this.coldRegion;
+	}
+	
+	public ArrayDeque<TCBufferFrame> hotRegion()
+	{
+		return this.hotRegion;
 	}
 }

@@ -28,8 +28,18 @@ public class TCBufferFrame extends BufferFrame
 		touch();
 	}
 	
-	public void touch()
+	private void touch()
 	{
 		touchCounter++;
+	}
+	
+	public int touchCount()
+	{
+		return touchCounter;
+	}
+	
+	public void setTouchCount(int newTouchCount) 
+	{
+		this.touchCounter = newTouchCount;
 	}
 }
