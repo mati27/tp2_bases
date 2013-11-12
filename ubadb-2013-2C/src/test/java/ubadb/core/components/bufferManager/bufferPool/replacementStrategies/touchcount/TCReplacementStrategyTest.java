@@ -31,8 +31,8 @@ public class TCReplacementStrategyTest
 	@Test(expected=PageReplacementStrategyException.class)
 	public void testThereIsNoPageToReplaceWhenAllFramesInColdRegionArePinned() throws Exception
 	{
-		BufferFrame frame0 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-		BufferFrame frame1 = strategy.createNewFrame(DummyObjectFactory.PAGE);
+		BufferFrame frame0 = createNewFrame();
+		BufferFrame frame1 = createNewFrame();
 		
 		frame0.pin();
 		frame1.pin();
@@ -40,30 +40,30 @@ public class TCReplacementStrategyTest
 		strategy.findVictim(Arrays.asList(frame0,frame1));
 	}
 	
-//	@Test
-//	public void testOnlyOneToReplace() throws Exception
-//	{
-//		BufferFrame frame0 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		BufferFrame frame1 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		BufferFrame frame2 = strategy.createNewFrame(DummyObjectFactory.PAGE);
+	@Test(expected=PageReplacementStrategyException.class)
+	public void testNoFramesToReplaceWhenAllFramesAreInHotRegion() throws Exception
+	{
+		BufferFrame frame0 = createNewFrame();
+		BufferFrame frame1 = createNewFrame();
+		
+		setTouchCountTo(frame0, 3);
+		setTouchCountTo(frame1, 3);
+		
+		strategy.findVictim(Arrays.asList(frame0,frame1));
+	}
+	
+	@Test
+	public void testLastFrameThatRemainsInColdRegionIsReplacedWhenLRUChainIsFull() throws Exception
+	{
+//		BufferFrame frame0 = createNewFrame();
+//		BufferFrame frame1 = createNewFrame();
+//		BufferFrame frame2 = createNewFrame();
+//		BufferFrame frame3 = createNewFrame();
 //		
-//		frame0.pin();
-//		frame1.pin();
 //		
-//		assertEquals(frame2,strategy.findVictim(Arrays.asList(frame0,frame1,frame2)));
-//	}
-//	
-//	@Test
-//	public void testMultiplePagesToReplace() throws Exception
-//	{
-//		BufferFrame frame0 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		Thread.sleep(TestUtil.PAUSE_INTERVAL);	//Add a sleep so that frame dates are different
-//		BufferFrame frame1 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		Thread.sleep(TestUtil.PAUSE_INTERVAL);
-//		BufferFrame frame2 = strategy.createNewFrame(DummyObjectFactory.PAGE);
 //		
 //		assertEquals(frame0,strategy.findVictim(Arrays.asList(frame0,frame1,frame2)));
-//	}
+	}
 //
 //	@Test
 //	public void testMultiplePagesToReplaceButOldestOnePinned() throws Exception
@@ -78,4 +78,15 @@ public class TCReplacementStrategyTest
 //		
 //		assertEquals(frame1,strategy.findVictim(Arrays.asList(frame0,frame1,frame2)));
 //	}
+
+	private BufferFrame createNewFrame() 
+	{
+		return strategy.createNewFrame(DummyObjectFactory.PAGE);
+	}
+	
+	private void setTouchCountTo(BufferFrame frame, int touchCount)
+	{
+		TCBufferFrame tcBufferFrame = (TCBufferFrame) frame;
+		tcBufferFrame.setTouchCount(touchCount);
+	}
 }
