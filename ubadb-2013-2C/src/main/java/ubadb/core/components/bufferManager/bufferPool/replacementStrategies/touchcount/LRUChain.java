@@ -23,11 +23,16 @@ public class LRUChain
 	
 	public void addNewFrame(TCBufferFrame frame) throws Exception
 	{
-		if(coldRegion.size() >= sizeColdRegion) {
+		if(coldRegion.size() == sizeColdRegion && hotRegion.size() == sizeHotRegion) {
 			throw new Exception("LRU chain capacity exceeded");
 		}
 		
-		coldRegion.add(frame);
+		if(hotRegion.size() < sizeHotRegion) {
+			hotRegion.add(frame);
+		} else {
+			coldRegion.add(frame);
+		}
+		
 		frame.setTouchCount(0);
 	}
 	
@@ -45,7 +50,7 @@ public class LRUChain
 	
 	public void removeFromColdRegion(TCBufferFrame frame) throws Exception
 	{
-		if(coldRegion.contains(frame)) {
+		if(!coldRegion.contains(frame)) {
 			throw new Exception("Frame is not in cold region");
 		}
 		

@@ -2,6 +2,7 @@ package ubadb.core.components.bufferManager.bufferPool.replacementStrategies.tou
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
@@ -22,10 +23,10 @@ public class LRUChainTest
 		assertTrue(chain.coldRegion().isEmpty());
 		assertTrue(chain.hotRegion().isEmpty());
 	}
-	
+
 	@Test
-	public void testNewFramesAreInsertedInTheColdRegion() throws Exception
-	{	
+	public void testNewFramesAreInsertedInTheHotRegionWhileTheChainIsNotFull() throws Exception
+	{
 		int sizeColdRegion = 4;
 		int sizeHotRegion = 4;
 		int hotCriteria = 2;
@@ -33,20 +34,35 @@ public class LRUChainTest
 		
 		LRUChain chain = new LRUChain(sizeColdRegion, sizeHotRegion, hotCriteria, coolCount);
 		
-		TCBufferFrame frame = this.aFrameWithTouchCount(1);
+		TCBufferFrame frame = this.aFrame();
 		
 		chain.addNewFrame(frame);
 		
+		assertFalse(chain.coldRegion().contains(frame));
+		assertTrue(chain.hotRegion().contains(frame));
+		assertEquals(chain.hotRegion().getLast(), frame);
+		assertEquals(0, frame.touchCount());
+	}
+	
+	@Test
+	public void testNewFramesAreInsertedInTheColdRegionWhenTheHotRegionIsFull() throws Exception
+	{	
+		LRUChain chain = anActiveChain();
+		
+		TCBufferFrame frame = this.aFrame();
+		chain.addNewFrame(frame);
+		
 		assertTrue(chain.coldRegion().contains(frame));
+		assertEquals(chain.coldRegion().size(), 2);
 		assertEquals(chain.coldRegion().getLast(), frame);
 		assertEquals(0, frame.touchCount());
 	}
 	
 	@Test(expected=Exception.class)
-	public void testInsertionFailsIfCapacityOfColdRegionIsExceeded() throws Exception
+	public void testInsertionFailsIfCapacityOfChainIsExceeded() throws Exception
 	{
 		int sizeColdRegion = 1;
-		int sizeHotRegion = 4;
+		int sizeHotRegion = 1;
 		int hotCriteria = 2;
 		int coolCount = 1;
 		
@@ -54,36 +70,27 @@ public class LRUChainTest
 		
 		TCBufferFrame frame1 = aFrame();
 		TCBufferFrame frame2 = aFrame();
+		TCBufferFrame frame3 = aFrame();
 		
 		chain.addNewFrame(frame1);
 		chain.addNewFrame(frame2);
+		chain.addNewFrame(frame3);
 	}
 	
 	@Test
 	public void testFramesWithCountGreaterThanHotCriteriaOnColdRegionAreMovedToHotRegionOnUpdate() throws Exception
 	{
-		int sizeColdRegion = 4;
-		int sizeHotRegion = 4;
-		int hotCriteria = 2;
-		int coolCount = 1;
-		
-		LRUChain chain = new LRUChain(sizeColdRegion, sizeHotRegion, hotCriteria, coolCount);
+		LRUChain chain = anActiveChain();
 		
 		TCBufferFrame frameToBeMovedToHotRegion = aFrame();
-		TCBufferFrame frameThatStaysInColdRegion = aFrame();
 		
 		chain.addNewFrame(frameToBeMovedToHotRegion);
-		chain.addNewFrame(frameThatStaysInColdRegion);
-		
-		frameThatStaysInColdRegion.setTouchCount(hotCriteria-1);
-		frameToBeMovedToHotRegion.setTouchCount(hotCriteria+1);
+		frameToBeMovedToHotRegion.setTouchCount(3);
 		
 		chain.update();
 		
-		assertTrue(chain.coldRegion().contains(frameThatStaysInColdRegion));
 		assertTrue(chain.hotRegion().contains(frameToBeMovedToHotRegion));
 		assertEquals(0, frameToBeMovedToHotRegion.touchCount());
-		assertEquals(1, frameThatStaysInColdRegion.touchCount());
 	}
 	
 	@Test
@@ -113,6 +120,12 @@ public class LRUChainTest
 		assertEquals(0, frame2.touchCount());
 	}
 	
+	@Test
+	public void testFramesReturnsTheUnionOfColdRegionAndHotRegionFramesInOrder()
+	{
+
+	}
+	
 	/* Factories */
 	private TCBufferFrame aFrame() 
 	{
@@ -125,6 +138,21 @@ public class LRUChainTest
 		frame.setTouchCount(n);
 		
 		return frame;
+	}
+	
+	private LRUChain anActiveChain() throws Exception
+	{
+		LRUChain chain = new LRUChain(2, 2, 2, 1);
+		
+		TCBufferFrame frame1 = this.aFrame();
+		TCBufferFrame frame2 = this.aFrame();
+		TCBufferFrame frame3 = this.aFrame();
+		
+		chain.addNewFrame(frame1);
+		chain.addNewFrame(frame2);
+		chain.addNewFrame(frame3);
+		
+		return chain;
 	}
 	
 }
