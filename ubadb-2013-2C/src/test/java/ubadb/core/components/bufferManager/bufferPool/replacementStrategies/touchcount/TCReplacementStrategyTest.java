@@ -53,31 +53,30 @@ public class TCReplacementStrategyTest
 	}
 	
 	@Test
-	public void testLastFrameThatRemainsInColdRegionIsReplacedWhenLRUChainIsFull() throws Exception
+	public void testLastFrameThatRemainsInColdRegionIsReplacedIfItsNotPinned() throws Exception
 	{
-//		BufferFrame frame0 = createNewFrame();
-//		BufferFrame frame1 = createNewFrame();
-//		BufferFrame frame2 = createNewFrame();
-//		BufferFrame frame3 = createNewFrame();
-//		
-//		
-//		
-//		assertEquals(frame0,strategy.findVictim(Arrays.asList(frame0,frame1,frame2)));
+		BufferFrame frame0 = createNewFrame();
+		BufferFrame frame1 = createNewFrame();
+		BufferFrame frame2 = createNewFrame();
+		BufferFrame frame3 = createNewFrame();
+		
+		setTouchCountTo(frame2, 3);
+	
+		assertEquals(frame3,strategy.findVictim(Arrays.asList(frame0,frame1,frame2,frame3)));
 	}
-//
-//	@Test
-//	public void testMultiplePagesToReplaceButOldestOnePinned() throws Exception
-//	{
-//		BufferFrame frame0 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		Thread.sleep(TestUtil.PAUSE_INTERVAL);	//Add a sleep so that frame dates are different
-//		BufferFrame frame1 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		Thread.sleep(TestUtil.PAUSE_INTERVAL);
-//		BufferFrame frame2 = strategy.createNewFrame(DummyObjectFactory.PAGE);
-//		
-//		frame0.pin();
-//		
-//		assertEquals(frame1,strategy.findVictim(Arrays.asList(frame0,frame1,frame2)));
-//	}
+	
+	@Test
+	public void testLastFrameThatIsNotPinnedInColdRegionIsReplaced() throws Exception
+	{
+		BufferFrame frame0 = createNewFrame();
+		BufferFrame frame1 = createNewFrame();
+		BufferFrame frame2 = createNewFrame();
+		BufferFrame frame3 = createNewFrame();
+		
+		frame2.pin();
+		
+		assertEquals(frame3,strategy.findVictim(Arrays.asList(frame0,frame1,frame2,frame3)));
+	}
 
 	private BufferFrame createNewFrame() 
 	{
