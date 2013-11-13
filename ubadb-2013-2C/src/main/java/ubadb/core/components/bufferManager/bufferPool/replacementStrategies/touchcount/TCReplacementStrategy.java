@@ -23,13 +23,21 @@ public class TCReplacementStrategy implements PageReplacementStrategy
 	{
 		lruChain.update();
 				
+		boolean found = false;
+		TCBufferFrame victim = null;
+		
 		for (TCBufferFrame possibleVictim : lruChain.coldRegion())
 		{
-			if(possibleVictim.canBeReplaced())
+			if(possibleVictim.canBeReplaced() && !found)
 			{
-				removeFromColdRegion(possibleVictim);
-				return possibleVictim;
+				found = true;
+				victim = possibleVictim;
 			}
+		}
+		
+		if(found) {
+			removeFromColdRegion(victim);
+			return victim;
 		}
 		
 		throw new PageReplacementStrategyException("No page can be replaced");

@@ -42,9 +42,14 @@ public class LRUChain
 		{
 			if(frame.touchCount() > hotCriteria)
 			{
+				// Java throw an exception if the add with an active iterator
 				moveFrameFromColdToHot(frame);
 				frame.setTouchCount(0);
 			}
+		}
+		
+		while(hotRegion.size() > sizeHotRegion) {
+			moveLastFrameFromHotToCold();
 		}
 	}
 	
@@ -54,7 +59,7 @@ public class LRUChain
 			throw new Exception("Frame is not in cold region");
 		}
 		
-		coldRegion.remove(frame);
+		coldRegion.remove();
 	}
 	
 	public ArrayDeque<TCBufferFrame> coldRegion()
@@ -69,12 +74,13 @@ public class LRUChain
 	
 	private void moveFrameFromColdToHot(TCBufferFrame frame)
 	{
-		coldRegion.remove(frame);
+		coldRegion.remove();
 		
-		if(hotRegion.size() == sizeHotRegion)
+/*		if(hotRegion.size() == sizeHotRegion)
 		{
 			moveLastFrameFromHotToCold();
 		}
+*/
 		
 		hotRegion.add(frame);
 	}

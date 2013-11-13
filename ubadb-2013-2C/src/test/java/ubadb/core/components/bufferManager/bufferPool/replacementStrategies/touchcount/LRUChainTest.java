@@ -120,11 +120,11 @@ public class LRUChainTest
 		assertEquals(0, frame2.touchCount());
 	}
 	
-	@Test
+	/*@Test
 	public void testFramesReturnsTheUnionOfColdRegionAndHotRegionFramesInOrder()
 	{
 
-	}
+	}*/
 	
 	/* Factories */
 	private TCBufferFrame aFrame() 
