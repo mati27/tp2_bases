@@ -47,7 +47,7 @@ public class TCReplacementStrategy implements PageReplacementStrategy
 	{
 		/* TODO: cannot modify interface*/
 		try {
-			lruChain.removeFromColdRegion(possibleVictim);
+			lruChain.remove(possibleVictim);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
