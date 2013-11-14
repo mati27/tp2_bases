@@ -29,7 +29,7 @@ public class TCReplacementStrategyTest
 	}
 	
 	@Test(expected=PageReplacementStrategyException.class)
-	public void testThereIsNoPageToReplaceWhenAllFramesInColdRegionArePinned() throws Exception
+	public void testThereIsNoPageToReplaceWhenAllFramesArePinned() throws Exception
 	{
 		BufferFrame frame0 = createNewFrame();
 		BufferFrame frame1 = createNewFrame();
@@ -40,7 +40,7 @@ public class TCReplacementStrategyTest
 		strategy.findVictim(Arrays.asList(frame0,frame1));
 	}
 	
-	@Test(expected=PageReplacementStrategyException.class)
+/*	@Test(expected=PageReplacementStrategyException.class)
 	public void testNoFramesToReplaceWhenAllFramesAreInHotRegion() throws Exception
 	{
 		BufferFrame frame0 = createNewFrame();
@@ -51,6 +51,7 @@ public class TCReplacementStrategyTest
 		
 		strategy.findVictim(Arrays.asList(frame0,frame1));
 	}
+*/
 	
 	@Test
 	public void testLastFrameThatRemainsInColdRegionIsReplacedIfItsNotPinned() throws Exception
@@ -77,6 +78,20 @@ public class TCReplacementStrategyTest
 		
 		assertEquals(frame3,strategy.findVictim(Arrays.asList(frame0,frame1,frame2,frame3)));
 	}
+	
+	@Test
+	public void testLastFrameInHotRegionIsReplacedWhenAllFramesArePinnedInColdRegion() throws Exception
+	{
+		BufferFrame frame0 = createNewFrame();
+		BufferFrame frame1 = createNewFrame();
+		BufferFrame frame2 = createNewFrame();
+		BufferFrame frame3 = createNewFrame();
+		
+		frame2.pin();
+		frame3.pin();
+		
+		assertEquals(frame0,strategy.findVictim(Arrays.asList(frame0,frame1,frame2,frame3)));
+	}		
 
 	private BufferFrame createNewFrame() 
 	{
@@ -88,4 +103,5 @@ public class TCReplacementStrategyTest
 		TCBufferFrame tcBufferFrame = (TCBufferFrame) frame;
 		tcBufferFrame.setTouchCount(touchCount);
 	}
+	
 }

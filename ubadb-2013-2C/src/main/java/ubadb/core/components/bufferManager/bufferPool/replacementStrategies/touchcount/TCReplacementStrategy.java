@@ -26,7 +26,7 @@ public class TCReplacementStrategy implements PageReplacementStrategy
 		boolean found = false;
 		TCBufferFrame victim = null;
 		
-		for (TCBufferFrame possibleVictim : lruChain.coldRegion())
+		for (TCBufferFrame possibleVictim : lruChain.framesInOrder())
 		{
 			if(possibleVictim.canBeReplaced() && !found)
 			{

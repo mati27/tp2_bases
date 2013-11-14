@@ -1,6 +1,7 @@
 package ubadb.core.components.bufferManager.bufferPool.replacementStrategies.touchcount;
 
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 
 public class LRUChain
 {
@@ -91,5 +92,20 @@ public class LRUChain
 		coldRegion.add(frameToRemove);
 		
 		frameToRemove.setTouchCount(coolCount);
+	}
+	
+	public ArrayList<TCBufferFrame> framesInOrder() {
+		ArrayList<TCBufferFrame> framesInOrder = new ArrayList();
+		
+		for(TCBufferFrame frame : coldRegion) 
+		{
+			framesInOrder.add(frame);
+		}
+		for(TCBufferFrame frame : hotRegion) 
+		{
+			framesInOrder.add(frame);
+		}		
+		return framesInOrder;
+		
 	}
 }

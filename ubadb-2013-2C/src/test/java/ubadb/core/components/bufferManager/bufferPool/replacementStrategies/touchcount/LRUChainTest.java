@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 
 import ubadb.core.testDoubles.DummyObjectFactory;
@@ -120,11 +122,28 @@ public class LRUChainTest
 		assertEquals(0, frame2.touchCount());
 	}
 	
-	/*@Test
-	public void testFramesReturnsTheUnionOfColdRegionAndHotRegionFramesInOrder()
+	@Test
+	public void testFramesReturnsTheUnionOfColdRegionAndHotRegionFramesInOrder() throws Exception
 	{
-
-	}*/
+		int hotCriteria = 2;
+		int coolCount = 1;
+		int sizeColdRegion = 2;
+		int sizeHotRegion = 2;
+		
+		LRUChain chain = new LRUChain(sizeColdRegion, sizeHotRegion, hotCriteria, coolCount);
+		
+		TCBufferFrame frame1 = aFrame();
+		TCBufferFrame frame2 = aFrame();
+		TCBufferFrame frame3 = aFrame();
+		TCBufferFrame frame4 = aFrame();
+		
+		chain.addNewFrame(frame1);
+		chain.addNewFrame(frame2);
+		chain.addNewFrame(frame3);
+		chain.addNewFrame(frame4);
+		
+		assertEquals(chain.framesInOrder(), Arrays.asList(frame3,frame4,frame1,frame2));
+	}
 	
 	/* Factories */
 	private TCBufferFrame aFrame() 
