@@ -18,8 +18,7 @@ public class MainTraceGenerator
 {
 	public static void main(String[] args) throws Exception
 	{
-//		basicDataSet();
-		complexDataSet();
+		createTP2Traces();
 	}
 	
 	private static void basicDataSet() throws Exception
@@ -108,7 +107,39 @@ public class MainTraceGenerator
 		String fileE = "generated/mixedE_tot100_conc5.trace";
 		mixTraces(fileE,folderE,100,5,serializer);
 	}
+	
+	private static void createTP2Traces() throws Exception
+	{
+		PageReferenceTraceSerializer serializer = new PageReferenceTraceSerializer();
+		
+		escenarioA(serializer);
+		escenarioB(serializer);
+	}
 
+	private static void escenarioA(PageReferenceTraceSerializer serializer) throws Exception {
+		String filenameTraceA1 = "generated/escenarioA/traces/fileScan-Product1.trace";
+		PageReferenceTrace traceA1 = new FileScanTraceGenerator().generateFileScan(1, "Product", 100);
+		serialize(filenameTraceA1, traceA1, serializer);
+		
+		String filenameTraceA2 = "generated/escenarioA/traces/fileScan-Product2.trace";
+		PageReferenceTrace traceA2 = new FileScanTraceGenerator().generateFileScan(1, "Product", 100);
+		serialize(filenameTraceA2, traceA2, serializer);
+		
+		mixTraces("generated/escenarioA/complete.trace", "generated/escenarioA/traces", 2, 2, serializer);
+	}
+	
+	private static void escenarioB(PageReferenceTraceSerializer serializer) throws Exception {
+		String filenameTraceB1 = "generated/escenarioB/traces/fileScan-Product1.trace";
+		PageReferenceTrace traceB1 = new FileScanTraceGenerator().generateFileScan(1, "Product", 100);
+		serialize(filenameTraceB1, traceB1, serializer);
+		
+		String filenameTraceB2 = "generated/escenarioB/traces/fileScan-Product2.trace";
+		PageReferenceTrace traceB2 = new BNLJTraceGenerator().generateBNLJ(1,"Product", 100, "Seller", 100, 20);
+		serialize(filenameTraceB2, traceB2, serializer);
+		
+		mixTraces("generated/escenarioB/complete.trace", "generated/escenarioB/traces", 2, 2, serializer);
+	}
+	
 	private static void mixTraces(String fileNameForNewTrace, String folderName, int totalTracesCount, int maxConcurrentTracesCount, PageReferenceTraceSerializer serializer) throws Exception
 	{
 		List<PageReferenceTrace> tracesToMix = buildTracesToMix(folderName,totalTracesCount,serializer);

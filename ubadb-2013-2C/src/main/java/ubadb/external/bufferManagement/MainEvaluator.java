@@ -6,6 +6,9 @@ import ubadb.core.components.bufferManager.bufferPool.BufferPool;
 import ubadb.core.components.bufferManager.bufferPool.pools.single.SingleBufferPool;
 import ubadb.core.components.bufferManager.bufferPool.replacementStrategies.PageReplacementStrategy;
 import ubadb.core.components.bufferManager.bufferPool.replacementStrategies.fifo.FIFOReplacementStrategy;
+import ubadb.core.components.bufferManager.bufferPool.replacementStrategies.lru.LRUReplacementStrategy;
+import ubadb.core.components.bufferManager.bufferPool.replacementStrategies.mru.MRUReplacementStrategy;
+import ubadb.core.components.bufferManager.bufferPool.replacementStrategies.touchcount.TCReplacementStrategy;
 import ubadb.core.components.catalogManager.CatalogManager;
 import ubadb.core.components.catalogManager.CatalogManagerImpl;
 import ubadb.core.components.diskManager.DiskManager;
@@ -22,12 +25,79 @@ public class MainEvaluator
 	
 	public static void main(String[] args)
 	{
+		String[] scenarios = {"escenarioA", "escenarioB"};
+		
+		for (String scenario : scenarios)
+		{
+			int bufferPoolSize = 100;
+			String traceFileName = "generated/" + scenario  + "/complete.trace";
+			
+			System.out.println("===================================================");
+			System.out.println(scenario);
+			System.out.println("===================================================");
+			
+			System.out.println("FIFO");
+			evaluateFIFO(bufferPoolSize, traceFileName);
+			
+			System.out.println("LRU");
+			evaluateLRU(bufferPoolSize, traceFileName);
+			
+			System.out.println("MRU");
+			evaluateMRU(bufferPoolSize, traceFileName);
+			
+			System.out.println("TC");
+			evaluateTC(bufferPoolSize, traceFileName);
+			System.out.println("\n");
+		}
+	}
+
+	private static void evaluateFIFO(int bufferPoolSize, String traceFileName) {
+		PageReplacementStrategy pageReplacementStrategy = new FIFOReplacementStrategy();
+		
 		try
 		{
-			PageReplacementStrategy pageReplacementStrategy = new FIFOReplacementStrategy();
-			String traceFileName = "generated/a.trace";
-			int bufferPoolSize = 100;
-			
+			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
+		}
+		catch(Exception e)
+		{
+			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
+			e.printStackTrace();
+		}
+	}
+	
+	private static void evaluateLRU(int bufferPoolSize, String traceFileName) {
+		PageReplacementStrategy pageReplacementStrategy = new LRUReplacementStrategy();
+		
+		try
+		{
+			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
+		}
+		catch(Exception e)
+		{
+			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
+			e.printStackTrace();
+		}
+	}
+	
+	private static void evaluateMRU(int bufferPoolSize, String traceFileName) {
+		PageReplacementStrategy pageReplacementStrategy = new MRUReplacementStrategy();
+		
+		try
+		{
+			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
+		}
+		catch(Exception e)
+		{
+			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
+			e.printStackTrace();
+		}
+	}
+	
+	private static void evaluateTC(int bufferPoolSize, String traceFileName) {
+		PageReplacementStrategy pageReplacementStrategy = new TCReplacementStrategy(bufferPoolSize, 50, 2, 1);
+		
+		try
+		{
 			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
 		}
 		catch(Exception e)

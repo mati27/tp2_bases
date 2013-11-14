@@ -145,6 +145,47 @@ public class LRUChainTest
 		assertEquals(chain.framesInOrder(), Arrays.asList(frame3,frame4,frame1,frame2));
 	}
 	
+	@Test
+	public void testRemovingFrameIsSuccessfulWhenFrameIsInTheColdRegion() throws Exception
+	{
+		LRUChain chain = anActiveChain();
+		
+		TCBufferFrame frameToBeRemoved = aFrame();
+		chain.addNewFrame(frameToBeRemoved);
+
+		chain.remove(frameToBeRemoved);
+		
+		assertTrue(!chain.coldRegion().contains(frameToBeRemoved));
+	}
+	
+	@Test
+	public void testRemovingFrameIsSuccessfulWhenFrameIsInTheHotRegion() throws Exception
+	{
+		int hotCriteria = 2;
+		int coolCount = 1;
+		int sizeColdRegion = 2;
+		int sizeHotRegion = 2;
+		
+		LRUChain chain = new LRUChain(sizeColdRegion, sizeHotRegion, hotCriteria, coolCount);
+		
+		TCBufferFrame frameToBeRemoved = aFrame();
+		chain.addNewFrame(frameToBeRemoved);
+
+		chain.remove(frameToBeRemoved);
+		
+		assertTrue(!chain.hotRegion().contains(frameToBeRemoved));
+	}
+	
+	@Test(expected=Exception.class)
+	public void testRemovingFrameFailsWhenFrameIsNotInTheChain() throws Exception
+	{
+		LRUChain chain = anActiveChain();
+		
+		TCBufferFrame frameNotInChain = aFrame();
+		
+		chain.remove(frameNotInChain);
+	}
+	
 	/* Factories */
 	private TCBufferFrame aFrame() 
 	{

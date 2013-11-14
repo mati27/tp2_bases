@@ -57,15 +57,16 @@ public class LRUChain
 	public void remove(TCBufferFrame frame) throws Exception
 	{
 		if(coldRegion.contains(frame)) {
-			coldRegion.remove();
-		} else { 
-			if(hotRegion.contains(frame)) {
-				hotRegion.remove();
-			} else {
-				throw new Exception("Frame is not in the chain");
-			}
+			coldRegion.remove(frame);
+			return;
 		}
 		
+		if(hotRegion.contains(frame)) {
+			hotRegion.remove(frame);
+			return;
+		}
+		
+		throw new Exception("Frame is not in the chain");
 	}
 	
 	public ArrayDeque<TCBufferFrame> coldRegion()
@@ -81,12 +82,6 @@ public class LRUChain
 	private void moveFrameFromColdToHot(TCBufferFrame frame)
 	{
 		coldRegion.remove();
-		
-/*		if(hotRegion.size() == sizeHotRegion)
-		{
-			moveLastFrameFromHotToCold();
-		}
-*/
 		
 		hotRegion.add(frame);
 	}
