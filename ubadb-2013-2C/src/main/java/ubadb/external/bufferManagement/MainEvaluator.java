@@ -25,85 +25,68 @@ public class MainEvaluator
 	
 	public static void main(String[] args)
 	{
-		String[] scenarios = {"escenarioA", "escenarioB"};
+		String[] scenarios = {"escenarioA", "escenarioA1", "escenarioA2", "escenarioB", "escenarioB1", 
+				"escenarioB2", "escenarioC", "escenarioC1", "escenarioC2", "escenarioD", "escenarioD1", 
+				"escenarioD2"};
+		int minBufferPoolSize = 50;
+		int maxBufferPoolSize = 500;
+		int bufferPoolSizeGap = 50;
 		
 		for (String scenario : scenarios)
 		{
-			int bufferPoolSize = 100;
 			String traceFileName = "generated/" + scenario  + "/complete.trace";
 			
 			System.out.println("===================================================");
 			System.out.println(scenario);
 			System.out.println("===================================================");
 			
+			System.out.println("----");
 			System.out.println("FIFO");
-			evaluateFIFO(bufferPoolSize, traceFileName);
+			System.out.println("----");
+			for(int bufferPoolSize=minBufferPoolSize; bufferPoolSize <= maxBufferPoolSize; bufferPoolSize += bufferPoolSizeGap) {
+				System.out.println("Buffer Pool Size: " + bufferPoolSize);
+				evaluateStrategy(bufferPoolSize, traceFileName, new FIFOReplacementStrategy());
+				System.out.println("\n");
+			}
 			
+			System.out.println("----");
 			System.out.println("LRU");
-			evaluateLRU(bufferPoolSize, traceFileName);
+			System.out.println("----");
+			for(int bufferPoolSize=minBufferPoolSize; bufferPoolSize <= maxBufferPoolSize; bufferPoolSize += bufferPoolSizeGap) {
+				System.out.println("Buffer Pool Size: " + bufferPoolSize);
+				evaluateStrategy(bufferPoolSize, traceFileName, new LRUReplacementStrategy());
+				System.out.println("\n");
+			}
 			
+			System.out.println("----");
 			System.out.println("MRU");
-			evaluateMRU(bufferPoolSize, traceFileName);
-			
+			System.out.println("----");
+			for(int bufferPoolSize=minBufferPoolSize; bufferPoolSize <= maxBufferPoolSize; bufferPoolSize += bufferPoolSizeGap) {
+				System.out.println("Buffer Pool Size: " + bufferPoolSize);
+				evaluateStrategy(bufferPoolSize, traceFileName, new MRUReplacementStrategy());
+				System.out.println("\n");
+			}
+		
+			System.out.println("----");
 			System.out.println("TC");
-			evaluateTC(bufferPoolSize, traceFileName);
-			System.out.println("\n");
-		}
-	}
-
-	private static void evaluateFIFO(int bufferPoolSize, String traceFileName) {
-		PageReplacementStrategy pageReplacementStrategy = new FIFOReplacementStrategy();
-		
-		try
-		{
-			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
-		}
-		catch(Exception e)
-		{
-			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
-			e.printStackTrace();
+			System.out.println("----");
+			for(int bufferPoolSize=minBufferPoolSize; bufferPoolSize <= maxBufferPoolSize; bufferPoolSize += bufferPoolSizeGap) {
+				System.out.println("Buffer Pool Size: " + bufferPoolSize);
+				evaluateStrategy(bufferPoolSize, traceFileName, new TCReplacementStrategy(bufferPoolSize, 50, 2, 1));
+				System.out.println("\n");
+			}
 		}
 	}
 	
-	private static void evaluateLRU(int bufferPoolSize, String traceFileName) {
-		PageReplacementStrategy pageReplacementStrategy = new LRUReplacementStrategy();
-		
+	private static void evaluateStrategy(int bufferPoolSize, String traceFileName, PageReplacementStrategy strategy) 
+	{
 		try
 		{
-			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
+			evaluate(strategy, traceFileName, bufferPoolSize);
 		}
 		catch(Exception e)
 		{
 			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
-			e.printStackTrace();
-		}
-	}
-	
-	private static void evaluateMRU(int bufferPoolSize, String traceFileName) {
-		PageReplacementStrategy pageReplacementStrategy = new MRUReplacementStrategy();
-		
-		try
-		{
-			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
-		}
-		catch(Exception e)
-		{
-			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
-			e.printStackTrace();
-		}
-	}
-	
-	private static void evaluateTC(int bufferPoolSize, String traceFileName) {
-		PageReplacementStrategy pageReplacementStrategy = new TCReplacementStrategy(bufferPoolSize, 50, 2, 1);
-		
-		try
-		{
-			evaluate(pageReplacementStrategy, traceFileName, bufferPoolSize);
-		}
-		catch(Exception e)
-		{
-			System.out.println("FATAL ERROR (" + e.getMessage() + ")");
-			e.printStackTrace();
 		}
 	}
 
