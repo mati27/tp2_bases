@@ -45,7 +45,6 @@ public class TCReplacementStrategy implements PageReplacementStrategy
 
 	private void removeFromColdRegion(TCBufferFrame possibleVictim)
 	{
-		/* TODO: cannot modify interface*/
 		try {
 			lruChain.remove(possibleVictim);
 		} catch (Exception e) {
@@ -57,7 +56,6 @@ public class TCReplacementStrategy implements PageReplacementStrategy
 	{
 		TCBufferFrame newFrame = new TCBufferFrame(page);
 		
-		/* TODO: Cannot modify interface and addNewFrame may throw Exception */
 		try {
 			lruChain.addNewFrame(newFrame);
 		} catch (Exception e) {

@@ -21,7 +21,7 @@ import ubadb.external.bufferManagement.etc.PageReferenceTraceSerializer;
 
 public class MainEvaluator
 {
-	private static final int PAUSE_BETWEEN_REFERENCES	= 0;
+	private static final int PAUSE_BETWEEN_REFERENCES = 0;
 	
 	public static void main(String[] args)
 	{

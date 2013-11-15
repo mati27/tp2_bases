@@ -1,0 +1,2580 @@
+===================================================
+escenarioA
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.13272727272727272
+Hit rate with memory: 0.146
+
+
+Buffer Pool Size: 100
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 150
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 200
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.12818181818181817
+Hit rate with memory: 0.141
+
+
+Buffer Pool Size: 100
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 150
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 200
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.4509090909090909
+Hit rate with memory: 0.496
+
+
+Buffer Pool Size: 100
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 150
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 200
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.31363636363636366
+Hit rate with memory: 0.345
+
+
+Buffer Pool Size: 100
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 150
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 200
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9090909090909091
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioA1
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.027019607843137255
+Hit rate with memory: 0.02756
+
+
+Buffer Pool Size: 100
+Hit rate: 0.026980392156862744
+Hit rate with memory: 0.02752
+
+
+Buffer Pool Size: 150
+Hit rate: 0.03184313725490196
+Hit rate with memory: 0.03248
+
+
+Buffer Pool Size: 200
+Hit rate: 0.04043137254901961
+Hit rate with memory: 0.04124
+
+
+Buffer Pool Size: 250
+Hit rate: 0.0727843137254902
+Hit rate with memory: 0.07424
+
+
+Buffer Pool Size: 300
+Hit rate: 0.14529411764705882
+Hit rate with memory: 0.1482
+
+
+Buffer Pool Size: 350
+Hit rate: 0.42349019607843136
+Hit rate with memory: 0.43196
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5772156862745098
+Hit rate with memory: 0.58876
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7848627450980392
+Hit rate with memory: 0.80056
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9803921568627451
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.03219607843137255
+Hit rate with memory: 0.03284
+
+
+Buffer Pool Size: 100
+Hit rate: 0.03545098039215686
+Hit rate with memory: 0.03616
+
+
+Buffer Pool Size: 150
+Hit rate: 0.03901960784313725
+Hit rate with memory: 0.0398
+
+
+Buffer Pool Size: 200
+Hit rate: 0.03427450980392157
+Hit rate with memory: 0.03496
+
+
+Buffer Pool Size: 250
+Hit rate: 0.04062745098039216
+Hit rate with memory: 0.04144
+
+
+Buffer Pool Size: 300
+Hit rate: 0.09235294117647058
+Hit rate with memory: 0.0942
+
+
+Buffer Pool Size: 350
+Hit rate: 0.1740392156862745
+Hit rate with memory: 0.17752
+
+
+Buffer Pool Size: 400
+Hit rate: 0.29945098039215684
+Hit rate with memory: 0.30544
+
+
+Buffer Pool Size: 450
+Hit rate: 0.6230980392156863
+Hit rate with memory: 0.63556
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9803921568627451
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.09596078431372548
+Hit rate with memory: 0.09788
+
+
+Buffer Pool Size: 100
+Hit rate: 0.19490196078431374
+Hit rate with memory: 0.1988
+
+
+Buffer Pool Size: 150
+Hit rate: 0.293921568627451
+Hit rate with memory: 0.2998
+
+
+Buffer Pool Size: 200
+Hit rate: 0.3905882352941176
+Hit rate with memory: 0.3984
+
+
+Buffer Pool Size: 250
+Hit rate: 0.488
+Hit rate with memory: 0.49776
+
+
+Buffer Pool Size: 300
+Hit rate: 0.5862745098039216
+Hit rate with memory: 0.598
+
+
+Buffer Pool Size: 350
+Hit rate: 0.6863529411764706
+Hit rate with memory: 0.70008
+
+
+Buffer Pool Size: 400
+Hit rate: 0.782156862745098
+Hit rate with memory: 0.7978
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8796078431372549
+Hit rate with memory: 0.8972
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9803921568627451
+Hit rate with memory: 1.0
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.06843137254901961
+Hit rate with memory: 0.0698
+
+
+Buffer Pool Size: 100
+Hit rate: 0.11843137254901961
+Hit rate with memory: 0.1208
+
+
+Buffer Pool Size: 150
+Hit rate: 0.1684313725490196
+Hit rate with memory: 0.1718
+
+
+Buffer Pool Size: 200
+Hit rate: 0.21843137254901962
+Hit rate with memory: 0.2228
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2684313725490196
+Hit rate with memory: 0.2738
+
+
+Buffer Pool Size: 300
+Hit rate: 0.3184313725490196
+Hit rate with memory: 0.3248
+
+
+Buffer Pool Size: 350
+Hit rate: 0.3684313725490196
+Hit rate with memory: 0.3758
+
+
+Buffer Pool Size: 400
+Hit rate: 0.41843137254901963
+Hit rate with memory: 0.4268
+
+
+Buffer Pool Size: 450
+Hit rate: 0.4684313725490196
+Hit rate with memory: 0.4778
+
+
+Buffer Pool Size: 500
+Hit rate: 0.9803921568627451
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioA2
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.010425742574257426
+Hit rate with memory: 0.01053
+
+
+Buffer Pool Size: 100
+Hit rate: 0.010732673267326734
+Hit rate with memory: 0.01084
+
+
+Buffer Pool Size: 150
+Hit rate: 0.011346534653465346
+Hit rate with memory: 0.01146
+
+
+Buffer Pool Size: 200
+Hit rate: 0.011831683168316832
+Hit rate with memory: 0.01195
+
+
+Buffer Pool Size: 250
+Hit rate: 0.012168316831683169
+Hit rate with memory: 0.01229
+
+
+Buffer Pool Size: 300
+Hit rate: 0.012653465346534654
+Hit rate with memory: 0.01278
+
+
+Buffer Pool Size: 350
+Hit rate: 0.013267326732673267
+Hit rate with memory: 0.0134
+
+
+Buffer Pool Size: 400
+Hit rate: 0.013722772277227723
+Hit rate with memory: 0.01386
+
+
+Buffer Pool Size: 450
+Hit rate: 0.014178217821782179
+Hit rate with memory: 0.01432
+
+
+Buffer Pool Size: 500
+Hit rate: 0.014772277227722772
+Hit rate with memory: 0.01492
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.010297029702970298
+Hit rate with memory: 0.0104
+
+
+Buffer Pool Size: 100
+Hit rate: 0.010633663366336634
+Hit rate with memory: 0.01074
+
+
+Buffer Pool Size: 150
+Hit rate: 0.011207920792079207
+Hit rate with memory: 0.01132
+
+
+Buffer Pool Size: 200
+Hit rate: 0.011742574257425743
+Hit rate with memory: 0.01186
+
+
+Buffer Pool Size: 250
+Hit rate: 0.012257425742574258
+Hit rate with memory: 0.01238
+
+
+Buffer Pool Size: 300
+Hit rate: 0.012613861386138615
+Hit rate with memory: 0.01274
+
+
+Buffer Pool Size: 350
+Hit rate: 0.013277227722772277
+Hit rate with memory: 0.01341
+
+
+Buffer Pool Size: 400
+Hit rate: 0.013930693069306931
+Hit rate with memory: 0.01407
+
+
+Buffer Pool Size: 450
+Hit rate: 0.014425742574257426
+Hit rate with memory: 0.01457
+
+
+Buffer Pool Size: 500
+Hit rate: 0.014772277227722772
+Hit rate with memory: 0.01492
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.048574257425742576
+Hit rate with memory: 0.04906
+
+
+Buffer Pool Size: 100
+Hit rate: 0.09848514851485149
+Hit rate with memory: 0.09947
+
+
+Buffer Pool Size: 150
+Hit rate: 0.1483069306930693
+Hit rate with memory: 0.14979
+
+
+Buffer Pool Size: 200
+Hit rate: 0.19776237623762377
+Hit rate with memory: 0.19974
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2475148514851485
+Hit rate with memory: 0.24999
+
+
+Buffer Pool Size: 300
+Hit rate: 0.2971881188118812
+Hit rate with memory: 0.30016
+
+
+Buffer Pool Size: 350
+Hit rate: 0.347019801980198
+Hit rate with memory: 0.35049
+
+
+Buffer Pool Size: 400
+Hit rate: 0.39583168316831685
+Hit rate with memory: 0.39979
+
+
+Buffer Pool Size: 450
+Hit rate: 0.44524752475247525
+Hit rate with memory: 0.4497
+
+
+Buffer Pool Size: 500
+Hit rate: 0.49465346534653465
+Hit rate with memory: 0.4996
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.03460396039603961
+Hit rate with memory: 0.03495
+
+
+Buffer Pool Size: 100
+Hit rate: 0.0596039603960396
+Hit rate with memory: 0.0602
+
+
+Buffer Pool Size: 150
+Hit rate: 0.08460396039603961
+Hit rate with memory: 0.08545
+
+
+Buffer Pool Size: 200
+Hit rate: 0.1096039603960396
+Hit rate with memory: 0.1107
+
+
+Buffer Pool Size: 250
+Hit rate: 0.1346039603960396
+Hit rate with memory: 0.13595
+
+
+Buffer Pool Size: 300
+Hit rate: 0.1596039603960396
+Hit rate with memory: 0.1612
+
+
+Buffer Pool Size: 350
+Hit rate: 0.1846039603960396
+Hit rate with memory: 0.18645
+
+
+Buffer Pool Size: 400
+Hit rate: 0.2096039603960396
+Hit rate with memory: 0.2117
+
+
+Buffer Pool Size: 450
+Hit rate: 0.2346039603960396
+Hit rate with memory: 0.23695
+
+
+Buffer Pool Size: 500
+Hit rate: 0.2596039603960396
+Hit rate with memory: 0.2622
+
+
+===================================================
+escenarioB
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.12714285714285714
+Hit rate with memory: 0.178
+
+
+Buffer Pool Size: 100
+Hit rate: 0.34714285714285714
+Hit rate with memory: 0.486
+
+
+Buffer Pool Size: 150
+Hit rate: 0.5357142857142857
+Hit rate with memory: 0.75
+
+
+Buffer Pool Size: 200
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.12428571428571429
+Hit rate with memory: 0.174
+
+
+Buffer Pool Size: 100
+Hit rate: 0.30857142857142855
+Hit rate with memory: 0.432
+
+
+Buffer Pool Size: 150
+Hit rate: 0.5385714285714286
+Hit rate with memory: 0.754
+
+
+Buffer Pool Size: 200
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.12142857142857143
+Hit rate with memory: 0.17
+
+
+Buffer Pool Size: 100
+Hit rate: 0.30428571428571427
+Hit rate with memory: 0.426
+
+
+Buffer Pool Size: 150
+Hit rate: 0.5142857142857142
+Hit rate with memory: 0.72
+
+
+Buffer Pool Size: 200
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.05714285714285714
+Hit rate with memory: 0.08
+
+
+Buffer Pool Size: 100
+Hit rate: 0.18714285714285714
+Hit rate with memory: 0.262
+
+
+Buffer Pool Size: 150
+Hit rate: 0.3557142857142857
+Hit rate with memory: 0.498
+
+
+Buffer Pool Size: 200
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.7142857142857143
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioB1
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.04510344827586207
+Hit rate with memory: 0.05030769230769231
+
+
+Buffer Pool Size: 100
+Hit rate: 0.11944827586206896
+Hit rate with memory: 0.13323076923076924
+
+
+Buffer Pool Size: 150
+Hit rate: 0.18317241379310345
+Hit rate with memory: 0.2043076923076923
+
+
+Buffer Pool Size: 200
+Hit rate: 0.32441379310344826
+Hit rate with memory: 0.3618461538461539
+
+
+Buffer Pool Size: 250
+Hit rate: 0.48786206896551726
+Hit rate with memory: 0.5441538461538461
+
+
+Buffer Pool Size: 300
+Hit rate: 0.6019310344827586
+Hit rate with memory: 0.6713846153846154
+
+
+Buffer Pool Size: 350
+Hit rate: 0.679448275862069
+Hit rate with memory: 0.7578461538461538
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7062068965517241
+Hit rate with memory: 0.7876923076923077
+
+
+Buffer Pool Size: 450
+Hit rate: 0.7369655172413793
+Hit rate with memory: 0.822
+
+
+Buffer Pool Size: 500
+Hit rate: 0.756551724137931
+Hit rate with memory: 0.8438461538461538
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.052551724137931036
+Hit rate with memory: 0.05861538461538462
+
+
+Buffer Pool Size: 100
+Hit rate: 0.132
+Hit rate with memory: 0.14723076923076922
+
+
+Buffer Pool Size: 150
+Hit rate: 0.23255172413793104
+Hit rate with memory: 0.2593846153846154
+
+
+Buffer Pool Size: 200
+Hit rate: 0.3616551724137931
+Hit rate with memory: 0.4033846153846154
+
+
+Buffer Pool Size: 250
+Hit rate: 0.5503448275862068
+Hit rate with memory: 0.6138461538461538
+
+
+Buffer Pool Size: 300
+Hit rate: 0.7442758620689656
+Hit rate with memory: 0.8301538461538461
+
+
+Buffer Pool Size: 350
+Hit rate: 0.7859310344827586
+Hit rate with memory: 0.8766153846153846
+
+
+Buffer Pool Size: 400
+Hit rate: 0.7946206896551724
+Hit rate with memory: 0.8863076923076924
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8035862068965517
+Hit rate with memory: 0.8963076923076924
+
+
+Buffer Pool Size: 500
+Hit rate: 0.8153103448275862
+Hit rate with memory: 0.9093846153846153
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.017241379310344827
+Hit rate with memory: 0.019230769230769232
+
+
+Buffer Pool Size: 100
+Hit rate: 0.03020689655172414
+Hit rate with memory: 0.033692307692307695
+
+
+Buffer Pool Size: 150
+Hit rate: 0.048413793103448274
+Hit rate with memory: 0.054
+
+
+Buffer Pool Size: 200
+Hit rate: 0.05503448275862069
+Hit rate with memory: 0.061384615384615385
+
+
+Buffer Pool Size: 250
+Hit rate: 0.09337931034482759
+Hit rate with memory: 0.10415384615384615
+
+
+Buffer Pool Size: 300
+Hit rate: 0.14179310344827586
+Hit rate with memory: 0.15815384615384614
+
+
+Buffer Pool Size: 350
+Hit rate: 0.22441379310344828
+Hit rate with memory: 0.2503076923076923
+
+
+Buffer Pool Size: 400
+Hit rate: 0.2289655172413793
+Hit rate with memory: 0.2553846153846154
+
+
+Buffer Pool Size: 450
+Hit rate: 0.34744827586206894
+Hit rate with memory: 0.38753846153846155
+
+
+Buffer Pool Size: 500
+Hit rate: 0.4398620689655172
+Hit rate with memory: 0.4906153846153846
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.01296551724137931
+Hit rate with memory: 0.014461538461538461
+
+
+Buffer Pool Size: 100
+Hit rate: 0.06082758620689655
+Hit rate with memory: 0.06784615384615385
+
+
+Buffer Pool Size: 150
+Hit rate: 0.10868965517241379
+Hit rate with memory: 0.12123076923076923
+
+
+Buffer Pool Size: 200
+Hit rate: 0.16924137931034483
+Hit rate with memory: 0.18876923076923077
+
+
+Buffer Pool Size: 250
+Hit rate: 0.21393103448275863
+Hit rate with memory: 0.23861538461538462
+
+
+Buffer Pool Size: 300
+Hit rate: 0.24275862068965517
+Hit rate with memory: 0.27076923076923076
+
+
+Buffer Pool Size: 350
+Hit rate: 0.6413793103448275
+Hit rate with memory: 0.7153846153846154
+
+
+Buffer Pool Size: 400
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 450
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 500
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+===================================================
+escenarioB2
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.16436363636363635
+Hit rate with memory: 0.17639024390243901
+
+
+Buffer Pool Size: 200
+Hit rate: 0.22345454545454546
+Hit rate with memory: 0.23980487804878048
+
+
+Buffer Pool Size: 250
+Hit rate: 0.32181818181818184
+Hit rate with memory: 0.34536585365853656
+
+
+Buffer Pool Size: 300
+Hit rate: 0.4385909090909091
+Hit rate with memory: 0.47068292682926827
+
+
+Buffer Pool Size: 350
+Hit rate: 0.48854545454545456
+Hit rate with memory: 0.5242926829268293
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5041363636363636
+Hit rate with memory: 0.5410243902439025
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5665
+Hit rate with memory: 0.6079512195121951
+
+
+Buffer Pool Size: 500
+Hit rate: 0.7216363636363636
+Hit rate with memory: 0.7744390243902439
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.15145454545454545
+Hit rate with memory: 0.16253658536585366
+
+
+Buffer Pool Size: 200
+Hit rate: 0.2019090909090909
+Hit rate with memory: 0.2166829268292683
+
+
+Buffer Pool Size: 250
+Hit rate: 0.25463636363636366
+Hit rate with memory: 0.27326829268292685
+
+
+Buffer Pool Size: 300
+Hit rate: 0.3201818181818182
+Hit rate with memory: 0.343609756097561
+
+
+Buffer Pool Size: 350
+Hit rate: 0.39304545454545453
+Hit rate with memory: 0.4218048780487805
+
+
+Buffer Pool Size: 400
+Hit rate: 0.4530909090909091
+Hit rate with memory: 0.4862439024390244
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5179090909090909
+Hit rate with memory: 0.5558048780487805
+
+
+Buffer Pool Size: 500
+Hit rate: 0.6263181818181818
+Hit rate with memory: 0.6721463414634147
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.0625
+Hit rate with memory: 0.06707317073170732
+
+
+Buffer Pool Size: 200
+Hit rate: 0.08068181818181819
+Hit rate with memory: 0.08658536585365853
+
+
+Buffer Pool Size: 250
+Hit rate: 0.09654545454545455
+Hit rate with memory: 0.10360975609756097
+
+
+Buffer Pool Size: 300
+Hit rate: 0.11395454545454546
+Hit rate with memory: 0.12229268292682927
+
+
+Buffer Pool Size: 350
+Hit rate: 0.1395909090909091
+Hit rate with memory: 0.14980487804878048
+
+
+Buffer Pool Size: 400
+Hit rate: 0.17427272727272727
+Hit rate with memory: 0.18702439024390244
+
+
+Buffer Pool Size: 450
+Hit rate: 0.20204545454545456
+Hit rate with memory: 0.21682926829268293
+
+
+Buffer Pool Size: 500
+Hit rate: 0.236
+Hit rate with memory: 0.25326829268292683
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.12413636363636364
+Hit rate with memory: 0.13321951219512196
+
+
+Buffer Pool Size: 200
+Hit rate: 0.2315
+Hit rate with memory: 0.2484390243902439
+
+
+Buffer Pool Size: 250
+Hit rate: 0.24422727272727274
+Hit rate with memory: 0.26209756097560977
+
+
+Buffer Pool Size: 300
+Hit rate: 0.28809090909090906
+Hit rate with memory: 0.30917073170731707
+
+
+Buffer Pool Size: 350
+Hit rate: 0.3397272727272727
+Hit rate with memory: 0.3645853658536585
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5067727272727273
+Hit rate with memory: 0.5438536585365854
+
+
+Buffer Pool Size: 450
+Hit rate: 0.6215909090909091
+Hit rate with memory: 0.6670731707317074
+
+
+Buffer Pool Size: 500
+Hit rate: 0.6727272727272727
+Hit rate with memory: 0.7219512195121951
+
+
+===================================================
+escenarioC
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.243
+Hit rate with memory: 0.486
+
+
+Buffer Pool Size: 100
+Hit rate: 0.389
+Hit rate with memory: 0.778
+
+
+Buffer Pool Size: 150
+Hit rate: 0.436
+Hit rate with memory: 0.872
+
+
+Buffer Pool Size: 200
+Hit rate: 0.473
+Hit rate with memory: 0.946
+
+
+Buffer Pool Size: 250
+Hit rate: 0.49
+Hit rate with memory: 0.98
+
+
+Buffer Pool Size: 300
+Hit rate: 0.498
+Hit rate with memory: 0.996
+
+
+Buffer Pool Size: 350
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.24
+Hit rate with memory: 0.48
+
+
+Buffer Pool Size: 100
+Hit rate: 0.369
+Hit rate with memory: 0.738
+
+
+Buffer Pool Size: 150
+Hit rate: 0.457
+Hit rate with memory: 0.914
+
+
+Buffer Pool Size: 200
+Hit rate: 0.474
+Hit rate with memory: 0.948
+
+
+Buffer Pool Size: 250
+Hit rate: 0.499
+Hit rate with memory: 0.998
+
+
+Buffer Pool Size: 300
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.113
+Hit rate with memory: 0.226
+
+
+Buffer Pool Size: 100
+Hit rate: 0.143
+Hit rate with memory: 0.286
+
+
+Buffer Pool Size: 150
+Hit rate: 0.232
+Hit rate with memory: 0.464
+
+
+Buffer Pool Size: 200
+Hit rate: 0.295
+Hit rate with memory: 0.59
+
+
+Buffer Pool Size: 250
+Hit rate: 0.276
+Hit rate with memory: 0.552
+
+
+Buffer Pool Size: 300
+Hit rate: 0.361
+Hit rate with memory: 0.722
+
+
+Buffer Pool Size: 350
+Hit rate: 0.422
+Hit rate with memory: 0.844
+
+
+Buffer Pool Size: 400
+Hit rate: 0.464
+Hit rate with memory: 0.928
+
+
+Buffer Pool Size: 450
+Hit rate: 0.477
+Hit rate with memory: 0.954
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 100
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 150
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 200
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioC1
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.04344729344729345
+Hit rate with memory: 0.1525
+
+
+Buffer Pool Size: 100
+Hit rate: 0.09188034188034189
+Hit rate with memory: 0.3225
+
+
+Buffer Pool Size: 150
+Hit rate: 0.1787749287749288
+Hit rate with memory: 0.6275
+
+
+Buffer Pool Size: 200
+Hit rate: 0.2264957264957265
+Hit rate with memory: 0.795
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2706552706552707
+Hit rate with memory: 0.95
+
+
+Buffer Pool Size: 300
+Hit rate: 0.25925925925925924
+Hit rate with memory: 0.91
+
+
+Buffer Pool Size: 350
+Hit rate: 0.2613960113960114
+Hit rate with memory: 0.9175
+
+
+Buffer Pool Size: 400
+Hit rate: 0.2777777777777778
+Hit rate with memory: 0.975
+
+
+Buffer Pool Size: 450
+Hit rate: 0.27564102564102566
+Hit rate with memory: 0.9675
+
+
+Buffer Pool Size: 500
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.04487179487179487
+Hit rate with memory: 0.1575
+
+
+Buffer Pool Size: 100
+Hit rate: 0.09045584045584046
+Hit rate with memory: 0.3175
+
+
+Buffer Pool Size: 150
+Hit rate: 0.14743589743589744
+Hit rate with memory: 0.5175
+
+
+Buffer Pool Size: 200
+Hit rate: 0.202991452991453
+Hit rate with memory: 0.7125
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2443019943019943
+Hit rate with memory: 0.8575
+
+
+Buffer Pool Size: 300
+Hit rate: 0.2670940170940171
+Hit rate with memory: 0.9375
+
+
+Buffer Pool Size: 350
+Hit rate: 0.2841880341880342
+Hit rate with memory: 0.9975
+
+
+Buffer Pool Size: 400
+Hit rate: 0.2720797720797721
+Hit rate with memory: 0.955
+
+
+Buffer Pool Size: 450
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.03133903133903134
+Hit rate with memory: 0.11
+
+
+Buffer Pool Size: 100
+Hit rate: 0.06552706552706553
+Hit rate with memory: 0.23
+
+
+Buffer Pool Size: 150
+Hit rate: 0.10826210826210826
+Hit rate with memory: 0.38
+
+
+Buffer Pool Size: 200
+Hit rate: 0.14387464387464388
+Hit rate with memory: 0.505
+
+
+Buffer Pool Size: 250
+Hit rate: 0.15598290598290598
+Hit rate with memory: 0.5475
+
+
+Buffer Pool Size: 300
+Hit rate: 0.18803418803418803
+Hit rate with memory: 0.66
+
+
+Buffer Pool Size: 350
+Hit rate: 0.22863247863247863
+Hit rate with memory: 0.8025
+
+
+Buffer Pool Size: 400
+Hit rate: 0.24857549857549857
+Hit rate with memory: 0.8725
+
+
+Buffer Pool Size: 450
+Hit rate: 0.26495726495726496
+Hit rate with memory: 0.93
+
+
+Buffer Pool Size: 500
+Hit rate: 0.28347578347578345
+Hit rate with memory: 0.995
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.004985754985754986
+Hit rate with memory: 0.0175
+
+
+Buffer Pool Size: 100
+Hit rate: 0.014957264957264958
+Hit rate with memory: 0.0525
+
+
+Buffer Pool Size: 150
+Hit rate: 0.023504273504273504
+Hit rate with memory: 0.0825
+
+
+Buffer Pool Size: 200
+Hit rate: 0.051994301994301995
+Hit rate with memory: 0.1825
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.2849002849002849
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioC2
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.1345
+Hit rate with memory: 0.269
+
+
+Buffer Pool Size: 100
+Hit rate: 0.26325
+Hit rate with memory: 0.5265
+
+
+Buffer Pool Size: 150
+Hit rate: 0.3695
+Hit rate with memory: 0.739
+
+
+Buffer Pool Size: 200
+Hit rate: 0.442
+Hit rate with memory: 0.884
+
+
+Buffer Pool Size: 250
+Hit rate: 0.4865
+Hit rate with memory: 0.973
+
+
+Buffer Pool Size: 300
+Hit rate: 0.49925
+Hit rate with memory: 0.9985
+
+
+Buffer Pool Size: 350
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.4995
+Hit rate with memory: 0.999
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.13025
+Hit rate with memory: 0.2605
+
+
+Buffer Pool Size: 100
+Hit rate: 0.24775
+Hit rate with memory: 0.4955
+
+
+Buffer Pool Size: 150
+Hit rate: 0.34825
+Hit rate with memory: 0.6965
+
+
+Buffer Pool Size: 200
+Hit rate: 0.429
+Hit rate with memory: 0.858
+
+
+Buffer Pool Size: 250
+Hit rate: 0.4655
+Hit rate with memory: 0.931
+
+
+Buffer Pool Size: 300
+Hit rate: 0.4955
+Hit rate with memory: 0.991
+
+
+Buffer Pool Size: 350
+Hit rate: 0.49975
+Hit rate with memory: 0.9995
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.01475
+Hit rate with memory: 0.0295
+
+
+Buffer Pool Size: 100
+Hit rate: 0.04625
+Hit rate with memory: 0.0925
+
+
+Buffer Pool Size: 150
+Hit rate: 0.056
+Hit rate with memory: 0.112
+
+
+Buffer Pool Size: 200
+Hit rate: 0.067
+Hit rate with memory: 0.134
+
+
+Buffer Pool Size: 250
+Hit rate: 0.0745
+Hit rate with memory: 0.149
+
+
+Buffer Pool Size: 300
+Hit rate: 0.09875
+Hit rate with memory: 0.1975
+
+
+Buffer Pool Size: 350
+Hit rate: 0.10925
+Hit rate with memory: 0.2185
+
+
+Buffer Pool Size: 400
+Hit rate: 0.117
+Hit rate with memory: 0.234
+
+
+Buffer Pool Size: 450
+Hit rate: 0.12675
+Hit rate with memory: 0.2535
+
+
+Buffer Pool Size: 500
+Hit rate: 0.15
+Hit rate with memory: 0.3
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.089
+Hit rate with memory: 0.178
+
+
+Buffer Pool Size: 100
+Hit rate: 0.209
+Hit rate with memory: 0.418
+
+
+Buffer Pool Size: 150
+Hit rate: 0.3175
+Hit rate with memory: 0.635
+
+
+Buffer Pool Size: 200
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioD
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+Hit rate: 0.334375
+Hit rate with memory: 0.4115384615384615
+
+
+Buffer Pool Size: 100
+Hit rate: 0.5760416666666667
+Hit rate with memory: 0.708974358974359
+
+
+Buffer Pool Size: 150
+Hit rate: 0.7583333333333333
+Hit rate with memory: 0.9333333333333333
+
+
+Buffer Pool Size: 200
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.31875
+Hit rate with memory: 0.3923076923076923
+
+
+Buffer Pool Size: 100
+Hit rate: 0.61875
+Hit rate with memory: 0.7615384615384615
+
+
+Buffer Pool Size: 150
+Hit rate: 0.7770833333333333
+Hit rate with memory: 0.9564102564102565
+
+
+Buffer Pool Size: 200
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+Hit rate: 0.28125
+Hit rate with memory: 0.34615384615384615
+
+
+Buffer Pool Size: 100
+Hit rate: 0.49583333333333335
+Hit rate with memory: 0.6102564102564103
+
+
+Buffer Pool Size: 150
+Hit rate: 0.7604166666666666
+Hit rate with memory: 0.9358974358974359
+
+
+Buffer Pool Size: 200
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+Hit rate: 0.28229166666666666
+Hit rate with memory: 0.3474358974358974
+
+
+Buffer Pool Size: 100
+Hit rate: 0.59375
+Hit rate with memory: 0.7307692307692307
+
+
+Buffer Pool Size: 150
+Hit rate: 0.7864583333333334
+Hit rate with memory: 0.967948717948718
+
+
+Buffer Pool Size: 200
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 250
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 300
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 350
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 400
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 450
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+Buffer Pool Size: 500
+Hit rate: 0.8125
+Hit rate with memory: 1.0
+
+
+===================================================
+escenarioD1
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.1263235294117647
+Hit rate with memory: 0.14316666666666666
+
+
+Buffer Pool Size: 200
+Hit rate: 0.13705882352941176
+Hit rate with memory: 0.15533333333333332
+
+
+Buffer Pool Size: 250
+Hit rate: 0.14544117647058824
+Hit rate with memory: 0.16483333333333333
+
+
+Buffer Pool Size: 300
+Hit rate: 0.15588235294117647
+Hit rate with memory: 0.17666666666666667
+
+
+Buffer Pool Size: 350
+Hit rate: 0.15970588235294117
+Hit rate with memory: 0.181
+
+
+Buffer Pool Size: 400
+Hit rate: 0.16338235294117648
+Hit rate with memory: 0.18516666666666667
+
+
+Buffer Pool Size: 450
+Hit rate: 0.19205882352941175
+Hit rate with memory: 0.21766666666666667
+
+
+Buffer Pool Size: 500
+Hit rate: 0.23470588235294118
+Hit rate with memory: 0.266
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.12897058823529411
+Hit rate with memory: 0.14616666666666667
+
+
+Buffer Pool Size: 200
+Hit rate: 0.13794117647058823
+Hit rate with memory: 0.15633333333333332
+
+
+Buffer Pool Size: 250
+Hit rate: 0.14191176470588235
+Hit rate with memory: 0.16083333333333333
+
+
+Buffer Pool Size: 300
+Hit rate: 0.1475
+Hit rate with memory: 0.16716666666666666
+
+
+Buffer Pool Size: 350
+Hit rate: 0.16
+Hit rate with memory: 0.18133333333333335
+
+
+Buffer Pool Size: 400
+Hit rate: 0.16264705882352942
+Hit rate with memory: 0.18433333333333332
+
+
+Buffer Pool Size: 450
+Hit rate: 0.17602941176470588
+Hit rate with memory: 0.1995
+
+
+Buffer Pool Size: 500
+Hit rate: 0.20720588235294118
+Hit rate with memory: 0.23483333333333334
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.18970588235294117
+Hit rate with memory: 0.215
+
+
+Buffer Pool Size: 200
+Hit rate: 0.26
+Hit rate with memory: 0.2946666666666667
+
+
+Buffer Pool Size: 250
+Hit rate: 0.3170588235294118
+Hit rate with memory: 0.35933333333333334
+
+
+Buffer Pool Size: 300
+Hit rate: 0.3711764705882353
+Hit rate with memory: 0.4206666666666667
+
+
+Buffer Pool Size: 350
+Hit rate: 0.42661764705882355
+Hit rate with memory: 0.4835
+
+
+Buffer Pool Size: 400
+Hit rate: 0.4747058823529412
+Hit rate with memory: 0.538
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5279411764705882
+Hit rate with memory: 0.5983333333333334
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5822058823529411
+Hit rate with memory: 0.6598333333333334
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+Hit rate: 0.13220588235294117
+Hit rate with memory: 0.14983333333333335
+
+
+Buffer Pool Size: 200
+Hit rate: 0.18720588235294117
+Hit rate with memory: 0.21216666666666667
+
+
+Buffer Pool Size: 250
+Hit rate: 0.2636764705882353
+Hit rate with memory: 0.29883333333333334
+
+
+Buffer Pool Size: 300
+Hit rate: 0.2939705882352941
+Hit rate with memory: 0.33316666666666667
+
+
+Buffer Pool Size: 350
+Hit rate: 0.32573529411764707
+Hit rate with memory: 0.36916666666666664
+
+
+Buffer Pool Size: 400
+Hit rate: 0.3552941176470588
+Hit rate with memory: 0.4026666666666667
+
+
+Buffer Pool Size: 450
+Hit rate: 0.3872058823529412
+Hit rate with memory: 0.43883333333333335
+
+
+Buffer Pool Size: 500
+Hit rate: 0.4275
+Hit rate with memory: 0.4845
+
+
+===================================================
+escenarioD2
+===================================================
+----
+FIFO
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 200
+Hit rate: 0.3102325581395349
+Hit rate with memory: 0.33772151898734176
+
+
+Buffer Pool Size: 250
+Hit rate: 0.3945581395348837
+Hit rate with memory: 0.42951898734177213
+
+
+Buffer Pool Size: 300
+Hit rate: 0.4625581395348837
+Hit rate with memory: 0.5035443037974684
+
+
+Buffer Pool Size: 350
+Hit rate: 0.4923255813953488
+Hit rate with memory: 0.5359493670886076
+
+
+Buffer Pool Size: 400
+Hit rate: 0.4998139534883721
+Hit rate with memory: 0.5441012658227848
+
+
+Buffer Pool Size: 450
+Hit rate: 0.49990697674418605
+Hit rate with memory: 0.5442025316455696
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5
+Hit rate with memory: 0.5443037974683544
+
+
+----
+LRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 200
+Hit rate: 0.2914418604651163
+Hit rate with memory: 0.31726582278481014
+
+
+Buffer Pool Size: 250
+Hit rate: 0.3578139534883721
+Hit rate with memory: 0.38951898734177215
+
+
+Buffer Pool Size: 300
+Hit rate: 0.4111627906976744
+Hit rate with memory: 0.44759493670886075
+
+
+Buffer Pool Size: 350
+Hit rate: 0.4545581395348837
+Hit rate with memory: 0.49483544303797466
+
+
+Buffer Pool Size: 400
+Hit rate: 0.4818139534883721
+Hit rate with memory: 0.524506329113924
+
+
+Buffer Pool Size: 450
+Hit rate: 0.4955813953488372
+Hit rate with memory: 0.5394936708860759
+
+
+Buffer Pool Size: 500
+Hit rate: 0.499953488372093
+Hit rate with memory: 0.544253164556962
+
+
+----
+MRU
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 200
+Hit rate: 0.07497674418604651
+Hit rate with memory: 0.08162025316455696
+
+
+Buffer Pool Size: 250
+Hit rate: 0.08153488372093023
+Hit rate with memory: 0.08875949367088608
+
+
+Buffer Pool Size: 300
+Hit rate: 0.09567441860465116
+Hit rate with memory: 0.10415189873417721
+
+
+Buffer Pool Size: 350
+Hit rate: 0.11
+Hit rate with memory: 0.11974683544303798
+
+
+Buffer Pool Size: 400
+Hit rate: 0.12404651162790697
+Hit rate with memory: 0.1350379746835443
+
+
+Buffer Pool Size: 450
+Hit rate: 0.14869767441860465
+Hit rate with memory: 0.16187341772151898
+
+
+Buffer Pool Size: 500
+Hit rate: 0.16386046511627908
+Hit rate with memory: 0.17837974683544303
+
+
+----
+TC
+----
+Buffer Pool Size: 50
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 100
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 150
+NO MORE SPACE AVAILABLE, MEMORY FULL
+FATAL ERROR (Cannot read page)
+
+
+Buffer Pool Size: 200
+Hit rate: 0.2161860465116279
+Hit rate with memory: 0.23534177215189872
+
+
+Buffer Pool Size: 250
+Hit rate: 0.30604651162790697
+Hit rate with memory: 0.3331645569620253
+
+
+Buffer Pool Size: 300
+Hit rate: 0.33525581395348836
+Hit rate with memory: 0.3649620253164557
+
+
+Buffer Pool Size: 350
+Hit rate: 0.3428372093023256
+Hit rate with memory: 0.37321518987341773
+
+
+Buffer Pool Size: 400
+Hit rate: 0.41869767441860467
+Hit rate with memory: 0.45579746835443036
+
+
+Buffer Pool Size: 450
+Hit rate: 0.5088837209302326
+Hit rate with memory: 0.5539746835443038
+
+
+Buffer Pool Size: 500
+Hit rate: 0.5732558139534883
+Hit rate with memory: 0.6240506329113924
+
+
